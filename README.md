@@ -1,15 +1,5 @@
-# encryptions
-Key logger domain format problematic web development
-const inputs = document.querySelectorAll(".controls input");
+#encryption. keylogger 
 
-//console.log(inputs);
-Directory.prototype.getContents = function (callback) {
-        if (this._contentsCallbacks) {
-            // There is already a pending call for this directory's contents.
-            // Push the new callback onto the stack and return.
-            this._contentsCallbacks.push(callback);
-            return;
-        }
 
         // Return cached contents if the directory is watched
         if (this._contents) {
@@ -170,16 +160,4 @@ function handleUpdate() {
 
 		this.value + suffix
 
-	);
-
-}
-
-// Now we are looping over inputs handleUpdate will return the current value of that element
-
-inputs.forEach((input) => input.addEventListener("change", handleUpdate));
-
-inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate));
-
-// const inputs1 = Array.from(inputs);
-
-// console.log(inputs1);
+	
