@@ -1,0 +1,27 @@
+package main
+
+import (
+	"bytes"
+	"errors"
+	"fmt"
+	"net"
+	"testing"
+
+	"github.com/cli/cli/pkg/cmdutil"
+	"github.com/spf13/cobra"
+)
+
+func Test_printError(t *testing.T) {
+	cmd := &cobra.Command{}
+
+	type args struct {
+		err   error
+		cmd   *cobra.Command
+		debug bool
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantOut string
+	}{
+		{
